@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<div id="header">
+   <div class="container">
+    <nav>
+        <img src="images/IMAGES/logo1.jpg" class="logo">
+        <ul id="sidemenu">
+           <li><a href="#header">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#Services">Service</a></li>
+           <li><a href="#Portfolio">Portfolio</a></li>
+           <li><a href="#contact">contact</a></li>
+           <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+        
+        
+    </nav>
+    <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi,I'm <span>Jayanthi</span><br>and i am front <br>end developer</h1>
+    </div>
+   </div> 
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-cloumn-1">
+                <img src="IMAGES/IMAGES/replace image.jpg" width="500px" height="350px" >
+            </div>
+            <div class="about-cloumn-2">
+                <h1 class="sub-title">About Me</h1>
+                 <P>I'am Full Stack Developer. who specializes in building elegante,responsiveand user friendly front end interfaces.
+                    With a passion for front end development i can develop a creative web pages.I can also cover database well.
+                 </P>
+                 <div class="tab-titles">
+                    <p class="Tab-links active-link" onclick="opentab('skills')">Skills</p>
+                     <p class="Tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="Tab-links" onclick="opentab('Education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML,CSS,Javascript</span></li>
+                         <li><span>C language</span></li>
+                         <li><span>C++ Programming language</span></li>
+                          <li><span>Artificial intelligence and machine learning</span></li>
+                          <li><span>SQL</span></li>
+                          <li><span>Java</span></li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="Experience">
+                    
+                    <ul>
+                        <li><span>2024</span><br>full stack developer</li>
+                         <li><span>2025</span><br>Artificial intelligence and machine learning</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2020</span><br>Schoolng in Sri Chaitanya Techno  School</li>
+                         <li><span>2020 - 2022</span><br>Intermediate in Sri Chaitanya Junior College</li>
+                         <li><span>2022 - 2026</span><br>B.Tech in Aditya Engineering College</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----SErvices---------------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Serivers</h1>
+        <div class="Services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>Web design</h1>
+            <p>Craft visually compelling and user-friendly websites tailored to your brand.</p>
+            <a href="#">Learn more</a>
+        </div>
+        
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h1>Presenting</h1>
+            <p>Website Designer Presenting Developer Team Management.</p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!-----------portfolio------>
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="IMAGES/IMAGES/work.1.jpg" >
+                <div class="layer">
+                    <h3>zomato Landing Clone Page</h3>
+                    <p> This involves replicating the layout and styling of the original zomato landing page. 
+This allows users to quickly find the places they are interested in without needing to browse through many options. </p>
+<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="IMAGES/IMAGES/rec.jpg"  >
+                <div class="layer">
+                    <h3>Food recipe</h3>
+                    <p> A recipe is a formula of ingredients and a list of instructions for creating prepared foods. </p>
+<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mattajayanthi963@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8688866702</p>
+                <div class="social-icons">
+                    <a href="htpps://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="IMAGES/IMAGES/My Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="text" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Jayanthi 2025 All rights reseverved</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("Tab-links");
+     var tabcontents=document.getElementsByClassName("tab-contents");
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+         sidemenu.style.right="0";
+    }
+    function closemenu(){
+         sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
